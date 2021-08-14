@@ -30,6 +30,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position: relative;
   overflow: hidden;
+  user-select: none;
 }
 @media (prefers-color-scheme: dark) {
   body {
