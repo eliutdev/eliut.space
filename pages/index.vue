@@ -1,6 +1,8 @@
 <template>
   <section class="home">
-    <h1>{{ $t('welcome') }}</h1>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <h1 class="title">{{ $t('welcome') }}</h1>
     <div class="alien">👽</div>
     <div class="alien">👽</div>
     <div class="alien">👽</div>
@@ -38,6 +40,60 @@ body {
     color: #fff;
   }
 }
+
+.stars,
+.twinkling {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stars {
+  z-index: 0;
+  background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top
+    center;
+}
+
+.twinkling {
+  z-index: 1;
+  background: transparent url('https://image.ibb.co/ir1DE8/twinkling.png')
+    repeat top center;
+  animation: move-twink-back 500s linear infinite;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+.title {
+  position: relative;
+  z-index: 11;
+  font-size: 10vw;
+  text-shadow: 4px 4px 0 #309557;
+  mix-blend-mode: screen;
+  animation: fadeIn 2.5s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .alien {
   --size: 1vw;
 
@@ -46,6 +102,7 @@ body {
   border-radius: 50%;
   position: absolute;
   top: -5vh;
+  z-index: 10;
 }
 @keyframes snowfall {
   0% {
