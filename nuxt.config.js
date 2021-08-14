@@ -31,9 +31,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/composition-api/module',
     '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
   ],
 
@@ -106,6 +105,11 @@ export default {
         },
       },
     },
+  },
+
+  generate: {
+    // choose to suit your project
+    interval: 2000,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

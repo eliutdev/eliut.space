@@ -17,7 +17,9 @@
     "*.{css,vue}": "stylelint"
   },
   "dependencies": {
+    "@nuxtjs/composition-api": "^0.26.0",
     "@nuxtjs/i18n": "^7.0.2",
+    "@vueuse/core": "^5.3.0",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7"
   },

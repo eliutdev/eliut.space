@@ -2,7 +2,10 @@
   <section class="home">
     <div class="stars"></div>
     <div class="twinkling"></div>
-    <h1 class="title">{{ $t('welcome') }}</h1>
+    <div class="container">
+      <h1 class="title">{{ $t('welcome') }}</h1>
+      <Icons />
+    </div>
     <div class="alien">👽</div>
     <div class="alien">👽</div>
     <div class="alien">👽</div>
@@ -55,29 +58,36 @@ body {
 
 .stars {
   z-index: 0;
-  background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top
-    center;
+  background: #fff;
 }
 
-.twinkling {
-  z-index: 1;
-  background: transparent url('https://image.ibb.co/ir1DE8/twinkling.png')
-    repeat top center;
-  animation: move-twink-back 500s linear infinite;
+@media (prefers-color-scheme: dark) {
+  .stars {
+    background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top
+      center;
+  }
+  .twinkling {
+    z-index: 1;
+    background: transparent url('https://image.ibb.co/ir1DE8/twinkling.png')
+      repeat top center;
+    animation: move-twink-back 500s linear infinite;
+  }
+  @keyframes move-twink-back {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -10000px 5000px;
+    }
+  }
 }
 
-@keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
+.container {
+  position: relative;
+  z-index: 11;
 }
 
 .title {
-  position: relative;
-  z-index: 11;
   font-size: 10vw;
   text-shadow: 4px 4px 0 #309557;
   mix-blend-mode: screen;
