@@ -60,9 +60,9 @@ export default {
       cookieKey: 'i18n_redirected',
       redirectOn: 'root', // recommended
     },
-    defaultLocale: 'en',
+    // defaultLocale: 'en',
     vueI18n: {
-      fallbackLocale: 'en',
+      // fallbackLocale: 'en',
       messages: {
         en: {
           welcome: 'Welcome',
