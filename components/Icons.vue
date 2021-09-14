@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <a href="https://www.instagram.com/reliutg/" target="_blank" class="icon">
+    <a href="https://www.instagram.com/eliutgon/" target="_blank" class="icon">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="44"
@@ -18,7 +18,7 @@
         <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
       </svg>
     </a>
-    <a href="https://github.com/reliut-g" target="_blank" class="icon">
+    <a href="https://github.com/eliutgon" target="_blank" class="icon">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="44"
@@ -36,7 +36,7 @@
         />
       </svg>
     </a>
-    <a href="https://twitter.com/reliutg" target="_blank" class="icon">
+    <a href="https://twitter.com/eliutgon" target="_blank" class="icon">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="44"
