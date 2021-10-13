@@ -49,6 +49,7 @@ export default {
       'en',
       'fr',
       'es',
+      'ca',
       'zh',
       'zh-tw',
       'hi',
@@ -77,6 +78,9 @@ export default {
         },
         es: {
           welcome: 'Bienvenido',
+        },
+        ca: {
+          welcome: 'Benvingut',
         },
         zh: {
           welcome: '比恩韦尼多',
