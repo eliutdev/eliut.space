@@ -7,6 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head() {
+    if(!this && !this.$nuxtI18nHead) return {}
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
     return {
       title: 'eliut.space',
