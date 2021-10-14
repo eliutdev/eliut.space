@@ -63,13 +63,11 @@ body {
 
 @media (prefers-color-scheme: dark) {
   .stars {
-    background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top
-      center;
+    background: #000 url('/stars.png') repeat top center;
   }
   .twinkling {
     z-index: 1;
-    background: transparent url('https://image.ibb.co/ir1DE8/twinkling.png')
-      repeat top center;
+    background: transparent url('/twinkling.png') repeat top center;
     animation: move-twink-back 500s linear infinite;
   }
   @keyframes move-twink-back {
