@@ -8,7 +8,7 @@ export default {
     if (!this.$nuxtI18nHead) return {}
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
     return {
-      title: 'eliut.space',
+      title: 'Eliut González',
       htmlAttrs: {
         ...i18nHead.htmlAttrs,
       },
