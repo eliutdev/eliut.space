@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="postcss">
 body {
   margin: 0;
   display: grid;
