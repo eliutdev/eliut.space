@@ -5,26 +5,6 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
-  head() {
-    if(!this && !this.$nuxtI18nHead) return {}
-    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
-    return {
-      title: 'eliut.space',
-      htmlAttrs: {
-        ...i18nHead.htmlAttrs
-      },
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'My awesome site' },
-        { name: 'format-detection', content: 'telephone=no' },
-        ...i18nHead.meta
-      ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, ...i18nHead.link],
-    }
-  },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
@@ -51,29 +31,27 @@ export default {
 
   i18n: {
     locales: [
-      'en',
-      'fr',
-      'es',
-      'ca',
-      'zh',
-      'zh-tw',
-      'hi',
-      'ar',
-      'bn',
-      'ru',
-      'pt',
-      'id',
-      'jp',
-      'pa',
+      { code: 'en', iso: 'en-US' },
+      { code: 'fr', iso: 'fr-FR' },
+      { code: 'es', iso: 'es-ES' },
+      { code: 'ca', iso: 'ca-ES' },
+      { code: 'zh', iso: 'zh-CN' },
+      { code: 'zh-tw', iso: 'zh-TW' },
+      { code: 'hi', iso: 'hi-IN' },
+      { code: 'ar', iso: 'ar-SA' },
+      { code: 'bn', iso: 'bn-IN' },
+      { code: 'ru', iso: 'ru-RU' },
+      { code: 'pt', iso: 'pt-BR' },
+      { code: 'id', iso: 'id-ID' },
+      { code: 'jp', iso: 'ja-JP' },
+      { code: 'pa', iso: 'pa-IN' },
     ],
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
-      redirectOn: 'root', // recommended
+      redirectOn: 'root',
     },
-    // defaultLocale: 'en',
     vueI18n: {
-      // fallbackLocale: 'en',
       messages: {
         en: {
           welcome: 'Welcome',
