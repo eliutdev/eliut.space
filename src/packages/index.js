@@ -46,7 +46,9 @@ packages.forEach((pckg) => {
   element.classList.add('card')
 
   element.innerHTML = `
-        <a href="https://www.npmjs.com/package/${pckg.name}" target="_blank">
+        <a href="https://www.npmjs.com/package/${
+          pckg.name
+        }" target="_blank" rel="nofollow noopener noreferrer">
           <h3>${pckg.name}</h3>
           <p class="card__description">${pckg.description}</p>
           <p class="card__keywords">

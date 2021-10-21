@@ -40,7 +40,9 @@ projects.forEach((project) => {
   element.classList.add('card')
 
   element.innerHTML = `
-        <a href="https://github.com/eliutgon/${project.name}" target="_blank">
+        <a href="https://github.com/eliutgon/${
+          project.name
+        }" target="_blank" rel="nofollow noopener noreferrer">
           <h3>${project.name}</h3>
           <p class="card__description">${project.description}</p>
           <p class="card__keywords">
