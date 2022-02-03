@@ -2,17 +2,6 @@
   <main>
     <h1>Eliut González</h1>
     <section>
-      <h2>Packages</h2>
-      <div class="packages-list">
-        <Card
-          v-for="pckg in packages"
-          :key="pckg.name"
-          v-bind="pckg"
-          type="package"
-        />
-      </div>
-    </section>
-    <section>
       <h2>Projects</h2>
       <div class="projects-list">
         <Card
@@ -20,6 +9,17 @@
           :key="pjt.name"
           v-bind="pjt"
           type="project"
+        />
+      </div>
+    </section>
+    <section>
+      <h2>Packages</h2>
+      <div class="packages-list">
+        <Card
+          v-for="pckg in packages"
+          :key="pckg.name"
+          v-bind="pckg"
+          type="package"
         />
       </div>
     </section>
@@ -126,6 +126,10 @@ export default {
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --color: #333;
   --color-muted: #999;
@@ -188,8 +192,13 @@ footer {
 }
 
 .footer {
-  margin: 1rem;
+  margin-top: 1rem;
   font-size: 0.875rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: auto;
 }
 
 .footer a {
